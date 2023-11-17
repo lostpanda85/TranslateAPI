@@ -1,6 +1,13 @@
 using TranslateAPI.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
+IHostEnvironment env = builder.Environment;
+
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: false)
+    .AddEnvironmentVariables();
 
 // Add services to the container.
 
@@ -13,11 +20,9 @@ builder.Services.AddScoped<ITranslate, TranslateService>(); //register with depe
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 

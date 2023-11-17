@@ -5,28 +5,28 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslateAPI", "TranslateAPI\TranslateAPI.csproj", "{9EE83873-6B36-400C-AA14-B7402472DAAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BDC73E2F-38FD-4638-943E-31B79F369FBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{BDC73E2F-38FD-4638-943E-31B79F369FBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateLayer", "TranslateLayer\TranslateLayer.csproj", "{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslateLayer", "TranslateLayer\TranslateLayer.csproj", "{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Production|Any CPU = Production|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9EE83873-6B36-400C-AA14-B7402472DAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9EE83873-6B36-400C-AA14-B7402472DAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EE83873-6B36-400C-AA14-B7402472DAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EE83873-6B36-400C-AA14-B7402472DAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE83873-6B36-400C-AA14-B7402472DAAA}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{9EE83873-6B36-400C-AA14-B7402472DAAA}.Production|Any CPU.Build.0 = Production|Any CPU
 		{BDC73E2F-38FD-4638-943E-31B79F369FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BDC73E2F-38FD-4638-943E-31B79F369FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDC73E2F-38FD-4638-943E-31B79F369FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDC73E2F-38FD-4638-943E-31B79F369FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC73E2F-38FD-4638-943E-31B79F369FBD}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC73E2F-38FD-4638-943E-31B79F369FBD}.Production|Any CPU.Build.0 = Release|Any CPU
 		{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{41A0CB7F-3C15-4167-9A1E-0AB8852FEBF9}.Production|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

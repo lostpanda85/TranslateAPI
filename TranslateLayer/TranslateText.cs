@@ -1,10 +1,19 @@
-﻿namespace TranslateLayer
+﻿using Microsoft.Extensions.Configuration;
+
+namespace TranslateLayer
 {
-    public static class TranslateText
+    public class TranslateText
     {
-        public static string Execute(string translateText)
+        private readonly IConfiguration _config;
+
+        public TranslateText(IConfiguration config)
         {
-            return "¡Buenos Dias!";
+            _config = config;
+        }
+
+        public string Execute(string translateText)
+        {
+            return "¡Buenos Dias! " + _config.GetSection("Environment").Value;
         }
     }
 }
